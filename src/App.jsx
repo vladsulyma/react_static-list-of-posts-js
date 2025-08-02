@@ -6,7 +6,7 @@ import usersFromServer from './api/users.json';
 import { PostList } from './components/PostList/PostList';
 
 function getCommentsById(id) {
-  return commentsFromServer.filter(comment => comment.postId === id) || null;
+  return commentsFromServer.filter(comment => comment.postId === id);
 }
 
 const posts = postsFromServer.map(post => ({
